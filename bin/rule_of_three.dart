@@ -14,7 +14,7 @@ levando em consideração que será considerado o argumento vário como valor a 
 poderá ter apenas um valor necessáriamente "vazio".
 */
 
-double ruleOfThree(n1, n2, n3, n4) {
+double ruleOfThree({double? n1, double? n2, double? n3, double? n4}) {
   if (n1 == null) return calculate(n2, n3, n4);
   if (n2 == null) return calculate(n1, n3, n4);
   if (n3 == null) return calculate(n1, n4, n2);
