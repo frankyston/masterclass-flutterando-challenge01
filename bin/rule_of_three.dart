@@ -18,8 +18,7 @@ double ruleOfThree({double? n1, double? n2, double? n3, double? n4}) {
   if (n1 == null) return calculate(n2, n3, n4);
   if (n2 == null) return calculate(n1, n3, n4);
   if (n3 == null) return calculate(n1, n4, n2);
-  if (n4 == null) return calculate(n2, n3, n1);
-  return 0;
+  return calculate(n2, n3, n1);
 }
 
 double calculate(a, b, c) {
